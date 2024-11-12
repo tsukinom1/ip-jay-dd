@@ -1,0 +1,8 @@
+.footer{
+    margin-top: auto;
+    background-color: var(--gray);
+    color: var(--light);
+}
+.footer-img{
+    width: 50px;
+}

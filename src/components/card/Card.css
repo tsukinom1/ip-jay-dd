@@ -1,0 +1,151 @@
+.card-wrapper{
+    border: 2px solid teal;
+    display: flex;
+    flex-direction: column;
+    height: 100%;  /* Заставляет карточку растягиваться по высоте */
+    justify-content: space-between;
+}
+.card-img{
+    width: 100%;  /* Изображение будет растягиваться по ширине карточки */
+    padding: 5%;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  /* Выровнять элементы по вертикали */
+}
+.card-btn{
+    align-self: center;  /* Выровнять кнопку по центру */
+    margin-top: auto;
+    width: 100%;
+    height: 50px;
+}
+
+.carousel-img {
+    object-fit: contain;
+    object-position: center;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: block;
+}
+
+/*---------MODAL-----------*/
+.modal-card-wrapper {
+    background-color: #f8f9fa; /* светло-серый фон */
+    padding: 20px;
+}
+
+@media (max-width: 576px) {
+    .card-img{
+        height: 550px;  /* Фиксированная высота изображения */
+    }
+    .modal-90w {
+        max-width: 95%; /* ширина для маленьких экранов */
+    }
+    .carousel-img {
+        max-width: 400px;
+    }
+    .modal-card-wrapper{
+        padding: 0;
+    }
+    .modal-title{
+        font-weight: 700;
+        line-height: 1;
+        font-size: 1.2rem;
+    }
+    .modal-text{
+        font-size: 1rem;
+        line-height: 1.02;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 576px) {
+    .card-img{
+        height: 500px;  /* Фиксированная высота изображения */
+    }
+    .modal-90w {
+        max-width: 90%;
+    }
+    .carousel-img {
+        max-width: 600px;
+    }
+    .modal-card-wrapper{
+        padding: 0;
+    }
+    .modal-title{
+        font-weight: 700;
+        line-height: 1.1;
+        font-size: 1.3rem;
+        margin-bottom: 5px;
+    }
+    .modal-text{
+        font-size: 1.05rem;
+        line-height: 1.02;
+        margin-bottom: 5px;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-img{
+        height: 300px;  /* Фиксированная высота изображения */
+    }
+    .modal-90w {
+        max-width: 80%; /* ширина для больших экранов */
+    }
+    .carousel-img {
+        max-width: 600px;
+    }
+    .modal-card-wrapper{
+        padding: 0;
+    }
+    .modal-title{
+        font-weight: 700;
+        line-height: 1;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    .modal-text{
+        font-size: 1.2rem;
+        line-height: 1.1;
+        margin-bottom: 10px;
+    }
+}
+@media (min-width: 1040px) {
+    .card-img{
+        height: 400px;  /* Фиксированная высота изображения */
+    }
+    .modal-90w {
+        max-width: 85%; /* ширина для больших экранов */
+    }
+    .carousel-img {
+        max-width: 650px;
+    }
+
+    .modal-card-wrapper{
+        padding: 0;
+    }
+    .modal-title{
+        font-weight: 700;
+        line-height: 1;
+        font-size: 1.7rem;
+        margin-bottom: 10px;
+    }
+    .modal-text{
+        font-size: 1.4rem;
+        line-height: 1.1;
+        margin-bottom: 10px;
+    }
+}
+
+.dark .card{
+    background-color: var(--gray) !important;
+    color: var(--light);
+}
+.dark .btn-close{
+    background-color: var(--light);
+}
+.dark .modal-content{
+    background-color: var(--dark);
+    color: var(--light);
+}

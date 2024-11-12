@@ -1,0 +1,67 @@
+:root {
+    --primary: #0d6efd;
+--gray: #343a40;
+    --dark: #212529;
+    --light: #f8f9fa;
+    --orange: #F39C32;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.app{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.s-text {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 30px;
+}
+.main-btn {
+    border: none;
+    border-radius: 5px;
+    background-color: var(--orange);
+    color: var(--light);
+}
+/*-------DARK THEME ------------*/
+
+.dark {
+    background: var(--dark);
+    color: var(--light);
+}
+
+/* ------ COMMON ------------*/
+.t-orange{
+    color: var(--orange);
+}
+.bg-orange{
+    background-color: var(--orange);
+}
+.lh-30{
+    line-height: 30px;
+}
+.lh-50{
+    line-height: 50px;
+}
+.fs-18{
+    font-size: 18px;
+}
+.fs-24{
+    font-size: 24px;
+}
+.fs-30{
+    font-size: 30px;
+}
+
+
+/*---------MODAL CARD LIST-----------*/
+
+

@@ -1,0 +1,37 @@
+
+.logo{
+    height:50px;
+}
+.social-img{
+    width:40px;
+    height:40px;
+}
+.social-btn{
+    background: var(--gray);
+    color: var(--light);
+}
+
+/* Устанавливаем темный фон для Navbar */
+.navbar {
+    background-color: var(--gray) !important;  /* Темный фон */
+}
+
+/* Устанавливаем светлый цвет текста в Navbar */
+.navbar .nav-link, .navbar .navbar-brand, .navbar .fs-24 {
+    color: var(--light);
+}
+
+.navbar-nav .nav-link:hover{
+    color: var(--orange);
+}
+
+.btn-dark:hover{
+    color: var(--orange);
+}
+.dropdown-menu {
+    background-color: var(--gray);
+}
+.dropdown-menu .dropdown-item:hover {
+    background-color: var(--gray);
+}
+
